@@ -12,5 +12,11 @@ namespace SistemaDeTarefas.Data
         }
 
         public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<TarefaModel> Tarefa { get; set; }  
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<TarefaModel>();
+        }
     }
 }

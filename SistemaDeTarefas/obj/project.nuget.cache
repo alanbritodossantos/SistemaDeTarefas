@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rahztPA47AAd0Sngl2mi69B8nPzqf1yKcpyDgnXjfD1QrRESCp5zNRTcREPNdWsyuvmxVMoO+EkzB77Pyx8xxA==",
+  "dgSpecHash": "dlOhVtiVUAo14ArDQy3HZfKVsT9ET8v1bEY2xO4wsom9+jBEmOPrz0fuXq4d+tR4tBoliMrAlxEo1E4rHIB/DQ==",
   "success": true,
   "projectFilePath": "C:\\workspace\\criando crud de tarefas - asp net web api\\SistemaDeTarefas\\SistemaDeTarefas\\SistemaDeTarefas.csproj",
   "expectedPackageFiles": [
