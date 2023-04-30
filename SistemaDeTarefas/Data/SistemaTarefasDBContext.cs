@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SistemaDeTarefas.Data.map;
+using SistemaDeTarefas.Data.Map;
 using SistemaDeTarefas.Models;
 
 namespace SistemaDeTarefas.Data
@@ -12,11 +14,14 @@ namespace SistemaDeTarefas.Data
         }
 
         public DbSet<UsuarioModel> Usuarios { get; set; }
-        public DbSet<TarefaModel> Tarefa { get; set; }  
+        public DbSet<TarefaModel> Tarefa { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TarefaModel>();
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new TarefaMap());
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
