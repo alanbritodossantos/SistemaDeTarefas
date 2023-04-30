@@ -40,7 +40,7 @@ namespace SistemaDeTarefas.Models.Repositorios
                 throw new Exception($"Usuário para o ID : {id} não foi encontrado no banco de dados.");
             }
 
-            usuarioPorId.Name = usuario.Name;
+            usuarioPorId.Nome = usuario.Nome;
             usuarioPorId.Email = usuario.Email;
 
             _dbContext.Usuarios.Update(usuarioPorId);
