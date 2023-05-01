@@ -16,12 +16,16 @@ namespace SistemaDeTarefas.Repositorios
         }
         public async Task<TarefaModel> BuscarPorId(int id)
         {
-            return await _dbContext.Tarefa.FirstOrDefaultAsync(x => x.Id == id);
+            return await _dbContext.Tarefa
+                .Include(x=> x.Usuario)
+                .FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<TarefaModel>> BuscarTodasTarefas()
         {
-            return await _dbContext.Tarefa.ToListAsync();
+            return await _dbContext.Tarefa
+                .Include(x=> x.Usuario)
+                .ToListAsync();
         }
 
         public async Task<TarefaModel> Adicionar(TarefaModel tarefa)
