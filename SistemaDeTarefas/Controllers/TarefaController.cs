@@ -10,6 +10,7 @@ namespace SistemaDeTarefas.Controllers
     public class TarefaController : ControllerBase
     {
         private readonly ITarefaRepositorio _tarefaRepositorio;
+
         public TarefaController(ITarefaRepositorio tarefaRepositorio)
         {
             _tarefaRepositorio = tarefaRepositorio;

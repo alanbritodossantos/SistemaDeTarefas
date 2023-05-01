@@ -12,7 +12,7 @@ using SistemaDeTarefas.Data;
 namespace SistemaDeTarefas.Migrations
 {
     [DbContext(typeof(SistemaTarefasDBContext))]
-    [Migration("20230501021224_VinculoTarefaUsuario")]
+    [Migration("20230501215036_VinculoTarefaUsuario")]
     partial class VinculoTarefaUsuario
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

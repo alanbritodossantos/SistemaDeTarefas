@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SistemaDeTarefas.Models;
 
 
-namespace SistemaDeTarefas.Data.map
+namespace SistemaDeTarefas.Data.Map
 {
     public class TarefaMap : IEntityTypeConfiguration<TarefaModel>
     {
@@ -13,9 +13,10 @@ namespace SistemaDeTarefas.Data.map
             builder.Property(x => x.Nome).IsRequired().HasMaxLength(255);
             builder.Property(x => x.Descricao).HasMaxLength(1000);
             builder.Property(x => x.Status).IsRequired();
-            builder.Property(x => x.UsuarioId);
+            builder.Property(x => x.UsuarioId);  
             
             builder.HasOne(x => x.Usuario);
         }
     }
 }
+ 

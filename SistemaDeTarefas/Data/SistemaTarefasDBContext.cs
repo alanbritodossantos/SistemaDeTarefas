@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SistemaDeTarefas.Data.map;
 using SistemaDeTarefas.Data.Map;
 using SistemaDeTarefas.Models;
 
