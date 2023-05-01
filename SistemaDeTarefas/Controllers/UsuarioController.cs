@@ -4,7 +4,7 @@ using SistemaDeTarefas.Models;
 using SistemaDeTarefas.Models;
 using SistemaDeTarefas.Repositorios.Interfaces;
 
-namespace SistemaDeTarefasV2.Controllers
+namespace SistemaDeTarefas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -16,7 +16,7 @@ namespace SistemaDeTarefasV2.Controllers
             _usuarioRepositorio = usuarioRepositorio;
         }
 
-        [HttpGet("teste")]
+        [HttpGet]
         public async Task<ActionResult<List<UsuarioModel>>> BuscarTodosUsuarios()
         {
             List<UsuarioModel> usuarios = await _usuarioRepositorio.BuscarTodosUsuarios();
