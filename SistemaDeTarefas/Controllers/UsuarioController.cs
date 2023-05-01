@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SistemaDeTarefas.Models.Repositorios.Interfaces;
 using SistemaDeTarefas.Models;
 using SistemaDeTarefas.Models;
-
+using SistemaDeTarefas.Repositorios.Interfaces;
 
 namespace SistemaDeTarefasV2.Controllers
 {
@@ -17,7 +16,7 @@ namespace SistemaDeTarefasV2.Controllers
             _usuarioRepositorio = usuarioRepositorio;
         }
 
-        [HttpGet]
+        [HttpGet("teste")]
         public async Task<ActionResult<List<UsuarioModel>>> BuscarTodosUsuarios()
         {
             List<UsuarioModel> usuarios = await _usuarioRepositorio.BuscarTodosUsuarios();

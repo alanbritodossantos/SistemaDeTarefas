@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemaDeTarefas.Data;
-using SistemaDeTarefas.Models.Repositorios.Interfaces;
+using SistemaDeTarefas.Models;
+using SistemaDeTarefas.Repositorios.Interfaces;
 
-namespace SistemaDeTarefas.Models.Repositorios
+namespace SistemaDeTarefas.Repositorios
 {
     public class UsuarioRepositorio : IUsuarioRepositorio
     {

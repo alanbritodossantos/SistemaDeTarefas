@@ -1,4 +1,6 @@
-﻿namespace SistemaDeTarefas.Models.Repositorios.Interfaces
+﻿using SistemaDeTarefas.Models;
+
+namespace SistemaDeTarefas.Repositorios.Interfaces
 {
     public interface IUsuarioRepositorio
     {
@@ -8,8 +10,8 @@
 
         Task<UsuarioModel> Adicionar(UsuarioModel usuario);
 
-        Task<UsuarioModel> Atualizar(UsuarioModel usuario,int id);
+        Task<UsuarioModel> Atualizar(UsuarioModel usuario, int id);
 
-        Task<bool>Apagar(int id);
+        Task<bool> Apagar(int id);
     }
 }

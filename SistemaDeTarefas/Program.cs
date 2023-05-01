@@ -1,7 +1,7 @@
-using SistemaDeTarefas.Models.Repositorios.Interfaces;
-using SistemaDeTarefas.Models.Repositorios;
 using Microsoft.EntityFrameworkCore;
 using SistemaDeTarefas.Data;
+using SistemaDeTarefas.Repositorios.Interfaces;
+using SistemaDeTarefas.Repositorios;
 
 namespace SistemaDeTarefas
 {
